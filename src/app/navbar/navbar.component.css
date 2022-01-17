@@ -1,0 +1,84 @@
+#hubLogo{
+    display: flex;
+    background-image: url('./nav_logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 15vw;
+}
+#navbar_main{
+    height: 10%;
+    width: 100%;
+    padding: 15px;
+    background-color:#18abd6;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#navbar_left{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+#navbar_right{
+    display: flex;
+    justify-content: right; /* horizontal middle */
+    align-content: center; /* vertical middle */
+    flex-wrap: wrap; /* work with align-content */
+    text-align: right;
+    width: 30%;
+}
+#wishListLoveShape{
+    background-image: url('./icon_heart_blue.svg');
+    height: 16px;
+    width: 16px;
+}
+#headshot{
+    margin-left: 20px;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+}
+#search_Line{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60%;
+    height: 5vh;
+    background-color:rgba(255,255,255,.25);
+    border:0;
+    color: white;
+    background-image: url('./icon_search.svg');
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+#orderClass, #findClass{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#wishListCount{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:#18abd6;
+    background: white;
+    margin-left: 6px;
+    border-radius: 15px;
+    width: 40px;
+    height: 100%;
+}
+#headTest{
+    background-image: url("./sad_hugecat.png");
+}

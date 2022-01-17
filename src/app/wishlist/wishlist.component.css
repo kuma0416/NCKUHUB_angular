@@ -1,0 +1,55 @@
+.leftSideMDiv{
+    margin-top: 10px;
+}
+
+#classDept{
+    background-image: url('./icon_data.svg');
+    background-repeat: no-repeat;
+    box-shadow: 0 0 14px 0 rgb(0 0 0 / 6%);
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-left: 50px;
+    background-position-x: 18px; /* adjust the image position */
+    background-position-y: center; /* adjust the image position */
+    margin-top: 10px;
+    border: #eee 1px solid;
+    width: calc(100% - 123px);
+}
+#commentLabel{ /* [problem]: length != classdept length, should use padding-right adjust, not sure coorrect or not */
+    box-sizing: content-box;
+    box-shadow: 0 0 14px 0 rgb(0 0 0 / 6%);
+    padding: 14px 35px 14px 19px;
+    margin-top: 10px;
+    border: #eee 1px solid;
+    width: calc(100% - 123px);
+    display: flex;
+    align-items: center;
+    font-size: medium;
+}
+#wishListContent{
+    box-shadow: 0 0 14px 0 rgb(0 0 0 / 6%);
+    padding: 14px 35px 14px 19px;
+    margin-top: 10px;
+    border: #eee 1px solid;
+    width: calc(100% - 123px);
+    font-size: 14px;
+    height: calc( 82vh - 313px - 2.5vh); /* [problem] height fixed, I dont know how to do QQ */
+}
+#wishListButton{box-sizing: content-box;
+    box-shadow: 0 0 14px 0 rgb(0 0 0 / 6%);
+    padding: 14px 35px 14px 19px;
+    margin-top: 10px;
+    border: #eee 1px solid;
+    width: calc(100% - 123px);
+    display: flex;
+    align-items: center;
+}
+#wishListButton img{
+    width: 17px;
+    height: auto;
+}
+#wishListButton p{
+    font-size: medium;
+    display: block;
+    padding-left: 14px;
+}

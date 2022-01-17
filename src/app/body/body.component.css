@@ -1,0 +1,29 @@
+#bodyDiv{
+    text-align: center;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#functionDiv{
+    padding: 14px 19px 14px 19px;
+    margin-top: 10px;
+    width: 30%;
+    height: calc( 100vh - 173px);
+    text-align: left;
+    vertical-align: top;
+    font-size: 20px;
+}
+
+#classListDiv{
+    box-shadow: 0 0 14px 0 rgb(0 0 0 / 6%);
+    padding: 14px 19px 14px 19px;
+    margin-top: 38px;
+    border: #eee 1px solid;
+    width: 50%;
+    vertical-align: middle;
+    height: calc( 100vh - 173px);
+    margin-left: 2vw;
+}
