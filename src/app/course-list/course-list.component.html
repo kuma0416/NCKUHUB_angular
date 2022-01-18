@@ -1,4 +1,4 @@
-<div class="classitem" data-id="course1">
+<!-- <div class="classitem" data-id="course1">
     <div class="classitemLeft">
         <p class="classCategory">通</p>
     </div>
@@ -35,5 +35,23 @@
             <img src="./heart_red.svg" class="redHeart" style="display: none;" data-ref="course2">
         </div>
     </div>
+</div> -->
+<div *ngFor = "let course of courses" class="classitem">
+    <div class="classitemLeft">
+        <p class="classCategory">{{course['系所名稱'].substring(0,1)}}</p>
+    </div>
+    <div class="classitemMid">
+        <p class="className">{{course['系號']}}-{{course['選課序號']}} {{course['課程名稱']}}</p>
+        <p class="teacherTime">{{course['系所名稱']}}  — {{course['老師']}} — {{course['時間']}} </p>
+    </div>
+    <div class="classitemRight">
+        <div class="comment_num">
+            <img src="./comment_num.svg">
+            <p>0</p>
+        </div>
+        <div class="classHeart">
+            <img src="./heart.svg" class="darkHeart" data-ref="course2">
+            <img src="./heart_red.svg" class="redHeart" style="display: none;" data-ref="course2">
+        </div>
+    </div>
 </div>
-<h2>test: {{courses}}</h2>

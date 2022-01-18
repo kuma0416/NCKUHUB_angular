@@ -10,9 +10,9 @@ import { course } from '../course';
 export class CourseListComponent implements OnInit {
 
   courses: course[] = [];
-  coursesService: any;
+  // coursesService: any;
 
-  constructor(coursesService: CoursesService){}
+  constructor( private coursesService: CoursesService){}
 
   ngOnInit(): void {
     this.getCourses();

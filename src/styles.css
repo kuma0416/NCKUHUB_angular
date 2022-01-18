@@ -2,6 +2,7 @@
 input::-webkit-input-placeholder { /* change placeholder font-color */
     color: white;
 }
+::-webkit-scrollbar{width:0px}
 #classDept::-webkit-input-placeholder{
     color: black;
 }

@@ -24,6 +24,7 @@
     border: #eee 1px solid;
     width: 50%;
     vertical-align: middle;
-    height: calc( 100vh - 173px);
+    height: 78vh;
     margin-left: 2vw;
+    overflow: auto;
 }
