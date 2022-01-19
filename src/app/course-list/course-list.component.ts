@@ -22,4 +22,11 @@ export class CourseListComponent implements OnInit {
     this.courses = this.coursesService.getCourses();
   }
 
+  checkWish(variable: any): boolean{
+    if(typeof variable.wish === 'undefined' || variable.wish == false){
+      return false;
+    }
+    return true;
+  }
+
 }
