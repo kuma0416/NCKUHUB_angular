@@ -12,4 +12,8 @@ export class CoursesService {
   getCourses(): course[] {
     return courses;
   }
+
+  getSpecificCourse(id: number): course | any {
+    return courses.find((element) => {element.id == id});
+  }
 }
