@@ -50,8 +50,8 @@
             <p>0</p>
         </div>
         <div class="classHeart">
-            <img src="./heart.svg" class="darkHeart" *ngIf = "!checkWish(courses)">
-            <img src="./heart_red.svg" class="redHeart" style="display: none;" data-re>
+            <img src="./heart.svg" class="darkHeart" *ngIf = "!checkWish(course)" (click)="wishListEvent(course)">
+            <img src="./heart_red_bk.svg" class="redHeart" *ngIf = "checkWish(course)" (click)="wishListEvent(course)">
         </div>
     </div>
 </div>

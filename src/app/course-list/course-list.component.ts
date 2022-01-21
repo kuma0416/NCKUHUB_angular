@@ -23,19 +23,18 @@ export class CourseListComponent implements OnInit {
     this.courses = this.coursesService.getCourses();
   }
 
-  checkWish(variable: any): boolean{
-    if(typeof variable.wish === 'undefined' || variable.wish == false){
-      return false;
-    }
-    return true;
+  checkWish(course: course): boolean{
+    return this.wishListService.checkWishList(course);
   }
 
-  wishListEvent(id: number, mode: number): void{
-    if(mode == 1){
-      this.wishListService.setWishList(this.coursesService.getSpecificCourse(id));
+  wishListEvent(course: course): void{
+    if(this.checkWish(course)){
+      this.wishListService.removeWishList(course);
+    } else {
+      this.wishListService.setWishList(course);
     }
-    console.log(this.wishListService.getWishList);
-    return;
+    console.log(this.wishListService.getWishList());
+    return ;
   }
 
 }

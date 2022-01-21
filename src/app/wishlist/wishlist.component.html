@@ -23,7 +23,7 @@
             <p>願望清單（0）</p>
         </div>
         <div id="wishListContent">
-            <p>尚未新增任何課程進入願望清單</p>
+            <p [style.display] = "checkWishListEmpty() ? '' : 'none'">尚未新增任何課程進入願望清單</p>
         </div>
         <div id=wishListButton>
             <img src='./arrange.svg'>

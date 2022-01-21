@@ -7,13 +7,21 @@ import { courses } from './mock-courses';
 })
 export class CoursesService {
 
+  private courseList: course[] = [];
+
   constructor() { }
 
   getCourses(): course[] {
+    this.courseList = courses;
     return courses;
   }
 
   getSpecificCourse(id: number): course | any {
-    return courses.find((element) => {element.id == id});
+    for(let i:number = 0; i<this.courseList.length; ++i){
+      if(this.courseList[i].id == id){
+        return this.courseList[i];
+      }
+    }
+    return null;
   }
 }
